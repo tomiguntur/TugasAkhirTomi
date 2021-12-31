@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "436913022319",
+    "project_id": "atry-3900b",
+    "storage_bucket": "atry-3900b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436913022319:android:7f025cead52cbaa5ad349a",
+        "android_client_info": {
+          "package_name": "com.tomiguntur.a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436913022319-0jtbcsdkcii262k5lbhcvgilncrbjupf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgNOfafppm1ASTrXfIhlSm82qf9QYSXME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436913022319-0jtbcsdkcii262k5lbhcvgilncrbjupf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

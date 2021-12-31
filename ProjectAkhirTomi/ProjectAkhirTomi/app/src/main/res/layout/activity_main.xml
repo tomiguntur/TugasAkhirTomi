@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJudulMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Thunder Running App"
+                    android:textColor="#26306d"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlRunning"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#427aa1"
+                        android:clickable="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewJudulCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_med"
+                            android:text="Running News"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewJudulCard"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_reg"
+                            android:text="The hottest news about marathon and running events"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRunning"
+                            android:layout_width="94dp"
+                            android:layout_height="105dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="0dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/menu1" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlShoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e8e8e8"
+                        android:clickable="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewJudulCard2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_med"
+                            android:text="Shoes Gudidance"
+                            android:textColor="#26306d"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewJudulCard2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_reg"
+                            android:text="Find your perfect running shoes here"
+                            android:textColor="#26306d" />
+
+                        <ImageView
+                            android:id="@+id/imageViewShoes"
+                            android:layout_width="77dp"
+                            android:layout_height="86dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="4dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/menu2" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#427aa1"
+                        android:clickable="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewJudulCard4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_med"
+                            android:text="Running Record"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="242dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewJudulCard4"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_reg"
+                            android:text="Anything about my running"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/imageViewAccount"
+                            android:layout_width="92dp"
+                            android:layout_height="88dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="0dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/menu4" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_button"
+                    android:backgroundTint="#a5a58d"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Log Out"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/allShoesListFragment">
+
+    <fragment
+        android:id="@+id/allShoesListFragment"
+        android:name="com.tomiguntur.ProjectAkhir.Shoes.AllShoesListFragment"
+        android:label="fragment_all_shoes_list"
+        tools:layout="@layout/fragment_all_shoes_list">
+        <action
+            android:id="@+id/action_allShoesListFragment_to_shoesDetailFragment"
+            app:destination="@id/shoesDetailFragment" />
+        <action
+            android:id="@+id/action_allShoesListFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <argument
+            android:name="quantity"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/shoesDetailFragment"
+        android:name="com.tomiguntur.ProjectAkhir.Shoes.ShoesDetailFragment"
+        android:label="fragment_shoes_detail"
+        tools:layout="@layout/fragment_shoes_detail">
+        <action
+            android:id="@+id/action_coffeeDetailFragment_to_allCoffeeListFragment"
+            app:destination="@id/allShoesListFragment" />
+
+
+        <argument
+            android:name="shoesname"
+            android:defaultValue="null"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            android:defaultValue="null"
+            app:argType="string" />
+        <argument
+            android:name="imageurl"
+            android:defaultValue="null"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="id"
+            android:defaultValue="null"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.tomiguntur.ProjectAkhir.Shoes.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_allCoffeeListFragment"
+            app:destination="@id/allShoesListFragment" />
+    </fragment>
+</navigation>
